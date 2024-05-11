@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dependency Inversion Principle (DIP)</title>
+</head>
+<body>
+It states that high-level modules should not depend on low-level modules.
+Instead, both should depend on abstractions. Abstractions should not depend on details;
+details should depend on abstractions.
+
+<h3>High-level modules should not depend on low-level modules:</h3>
+Traditionally, high-level modules (e.g., business logic, user interface) directly depend on low-level modules
+(e.g., database access, file system operations). This creates tight coupling, making the system rigid
+and difficult to change.
+
+<h3>Both should depend on abstractions:</h3>
+Instead of high-level modules depending directly on low-level modules, both should depend on abstractions.
+Abstractions represent contracts or interfaces that define how high-level and low-level modules interact.
+This allows for flexibility and interchangeability of implementations.
+
+<h3>Abstractions should not depend on details:</h3>
+Abstractions should define the behavior or contract without depending on specific implementation details.
+This allows for multiple implementations to fulfill the same contract, promoting flexibility and extensibility.
+
+<h3>Details should depend on abstractions:</h3>
+Low-level modules, which contain the implementation details, should depend on the abstractions defined
+by high-level modules. This allows for multiple implementations of low-level functionality to fulfill
+the same contract, without affecting the high-level modules.
+
+</body>
+</html>
