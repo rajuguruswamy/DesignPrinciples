@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interface Segregation Principle</title>
+</head>
+<body>
+The Interface Segregation Principle (ISP) states that clients should not be forced to depend
+on interfaces they do not use. In other words, it suggests that you should design fine-grained
+interfaces that are specific to the needs of the clients.
+
+Consider a scenario where you are designing an interface for a document editing application.
+You want to create an interface that allows different types of users to perform various actions.
+The application has two types of users: basic users and advanced users. Basic users can create, edit,
+and save documents,while advanced users can perform all actions, including printing documents.
+
+If we implement the DocumentEditor interface violates the Interface Segregation Principle because it forces
+the BasicUser class to implement the printDocument() method, which is not relevant to basic users.
+To adhere to the Interface Segregation Principle, you should create smaller, more specific interfaces:
+
+
+
+</body>
+</html>
